@@ -1,17 +1,53 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <style >
+    /* Estilos para el fondo del ion-content */
+    ion-content {
+      background-color: #f4f4f4; /* Color de fondo gris claro */
+    }
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    /* Estilos para los cards de usuario */
+    app-user-card {
+      display: block;
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff; /* Color de fondo blanco */
+      border-radius: 10px; /* Esquinas redondeadas */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+      color: black;
+    }
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    /* Estilos para el nombre de usuario */
+    .user-name {
+      font-size: 20px;
+      color: #3498db; /* Color azul brillante */
+      margin-bottom: 10px;
+    }
+
+    /* Estilos para la información adicional del usuario */
+    .additional-info {
+      font-size: 14px;
+      color: #2ecc71; /* Color verde brillante */
+      margin-bottom: 15px;
+    }
+
+    /* Estilos para la imagen de perfil del usuario */
+    .user-profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; /* Hace la imagen circular */
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <app-user-card 
+    [userName]="'Usuario 1'" 
+    [additionalInfo]="'Información adicional del usuario 1'"
+    [userProfileImage]="'https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'">
+  </app-user-card>
+
+  <app-user-card 
+    [userName]="'Usuario 2'" 
+    [additionalInfo]="'Información adicional del usuario 2'"
+    [userProfileImage]="'https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'">
+  </app-user-card>
 </ion-content>

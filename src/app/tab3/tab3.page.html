@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+  <ion-toolbar style="background: linear-gradient(45deg, #3498db, #9b59b6); /* Degradado de colores azul y morado */">
+    <ion-title style="color: #ffffff; font-weight: bold;">
+      Tab 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" style="background-color: #ecf0f1; /* Color de fondo gris claro */">
+  <style>
+    /* Estilos para el app-nav-bar */
+    app-nav-bar {
+      background-color: #2ecc71; /* Color de fondo verde brillante */
+      color: #ffffff; /* Texto blanco */
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px; /* Esquinas redondeadas */
+      margin: 20px;
+    }
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    /* Estilos para el párrafo */
+    p {
+      font-size: 18px;
+      color: #e74c3c; /* Color rojo brillante */
+      padding: 20px;
+      text-align: center;
+      border: 2px solid #c0392b; /* Borde rojo */
+      border-radius: 10px; /* Esquinas redondeadas */
+      margin: 20px;
+    }
+  </style>
+
+  <app-nav-bar pageTitle="Página 1"></app-nav-bar>
+
+  <p>¡Hola, bienvenido a la Página 1!</p>
 </ion-content>
